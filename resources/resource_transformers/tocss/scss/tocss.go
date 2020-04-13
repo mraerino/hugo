@@ -107,7 +107,7 @@ func (t *toCSSTransformation) Transform(ctx *resources.ResourceTransformationCtx
 			if err == nil {
 				body, err := ioutil.ReadAll(f)
 				if err == nil {
-					return "", string(body), true
+					return url, string(body), true
 				}
 			}
 		}
